@@ -1,27 +1,42 @@
 let projectIndex = 0;
+
+function setImage(image, url){
+    image.src = url;
+}
+
+function setDesc(element, description){
+    element.innerHTML = description;
+}
+
 function nextProject () {
-    let project, nextProject;
+    let projectImage, projectDesc;
+    projectImage = document.getElementById("projectImage");
+    projectDesc = document.getElementById("projectDesc");
     switch(projectIndex){
         case 0:
-            project = document.getElementById("JSDocs");
-            nextProject = document.getElementById("productLandingPage");
+            
+            setImage(projectImage, "productLanding.png");
+            setDesc(projectDesc, "Product Landing Page");
+            
             break;
         case 1:
-            project = document.getElementById("productLandingPage");
-            nextProject = document.getElementById("survey");
+            setImage(projectImage, "survey.png");
+            setDesc(projectDesc, "Survey Form");
             break;
         case 2:
-            project = document.getElementById("survey");
-            nextProject = document.getElementById("codewars");
+            setImage(projectImage, "codewars.png")
+            setDesc(projectDesc, "CodeWars link");
             break;
         case 3:
-            project = document.getElementById("codewars");
-            nextProject = document.getElementById("JSDocs");
+            setImage(projectImage,"javascriptDocumentation.png")
+            setDesc(projectDesc, "Javascript Documentation");
             break;
 
     }
-    project.style.visibility = "collapse";
-    nextProject.style.visibility = "visible";
     projectIndex++;
-    if (projectIndex > projects.length -1) projectIndex = 0;
+    if (projectIndex > 3) projectIndex = 0;
+}
+
+function previousProject(){
+    
 }
