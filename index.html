@@ -1,0 +1,102 @@
+<html>
+
+<head>
+  <title>Portfolio</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel = "stylesheet" href = "styles.css">
+  
+</head>
+
+<body>
+  <header>
+    <nav id="navbar">
+      <a href="#welcome-section" class="navigationLink">About</a>
+      <a href="#projects" class="navigationLink">Work</a>
+      <a href="#contact" class="navigationLink">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="welcome-section">
+      <div id="welcomeText">
+        <img src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Prescription02&hairColor=Black&facialHairType=BeardLight&facialHairColor=Black&clotheType=Hoodie&clotheColor=Black&eyeType=Side&eyebrowType=Default&mouthType=Smile&skinColor=Light'
+        />
+        <h1>Hi, my name is Anton!</h1>
+        <h2 class="welcomeDescription">IT Student</h2>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="projectTitle">Have a look at some of my projects!</h2>
+      <div class = "projectSlide">
+        <figure class = "project" id = "JSDocs">
+            <img class = "currentProject" src="javascriptDocumentation.png" >
+            <figcaption class = "projectDescription">First project</figcaption>
+        </figure>
+        <figure class = "project" id = "productLandingPage">
+            <img class = "hiddenProject" src="#" >
+        </figure>
+        <figure class = "project" id = "survey">
+            <img class = "hiddenProject" src="#" >
+        </figure>
+        <figure class = "project" id = "codewars">
+            <img class = "hiddenProject" src="#" >
+        </figure>
+      </div>
+
+      <div class = "projectNavigation">
+          <img src = "navigationArrow.png" id = "arrowLeft" class = "navigationArrow">
+          <img src = "navigationArrow.png" id = "arrowRight" class = "navigationArrow" onclick="nextProject()">
+      </div>
+      
+    </section>
+
+    <section id="contact">
+
+      <h2 id="contactTitle">Let's work together...</h2>
+      <h3>Here's how you can contact me</h3>
+
+      <div id="contacts">
+        <a href="#" target = "_blank">
+          <figure class="contactInfo">
+            <i class="fab fa-facebook-square" id="icon"></i>
+            <figcaption>Facebook</figcaption>
+          </figure>
+        </a>
+        <a id="profile-link" href="https://www.freecodecamp.org/antonlovric" target = "_blank">
+          <figure class="contactInfo">
+            <i class="fab fa-github-square"></i>
+            <figcaption>Github</figcaption>
+          </figure>
+        </a>
+
+        <a href="#">
+          <figure class="contactInfo" target = "_blank">
+            <i class="fab fa-twitter-square"></i>
+            <figcaption>Twitter</figcaption>
+          </figure>
+        </a>
+        <a href="mailto:alovric@foi.hr" target = "_blank">
+          <figure class="contactInfo">
+            <i class="fas fa-envelope-square"></i>
+            <figcaption>Send an email</figcaption>
+          </figure>
+        </a>
+        <a href="tel:0919825264" target = "_blank">
+          <figure class="contactInfo">
+            <i class="fas fa-phone-square"></i>
+            <figcaption>Call me</figcaption>
+          </figure>
+        </a>
+      </div>
+
+    </section>
+
+    <footer>
+      
+      <span id="copyright">&copy;Anton Lovrić, 2021. </span> <a href="#"><i class="fab fa-free-code-camp"></i></a>
+    </footer>
+  </main>
+  <script src = "script.js"></script>
+</body>
+
+</html>
