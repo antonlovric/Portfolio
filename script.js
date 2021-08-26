@@ -38,5 +38,30 @@ function nextProject () {
 }
 
 function previousProject(){
+    let projectImage, projectDesc;
+    projectImage = document.getElementById("projectImage");
+    projectDesc = document.getElementById("projectDesc");
+
+    switch (projectIndex) {
+        case 0:
+            
+            break;
+        case 1:
+            setImage(projectImage,"javascriptDocumentation.png")
+            setDesc(projectDesc, "Javascript Documentation");
+            break;
+        case 2:
+            setImage(projectImage, "productLanding.png");
+            setDesc(projectDesc, "Product Landing Page");
+            
+            break;
+        case 3:
+            setImage(projectImage, "codewars.png")
+            setDesc(projectDesc, "CodeWars link");
+            break;
     
+    }
+
+    projectIndex--;
+    if (projectIndex < 0) projectIndex = 0;
 }

@@ -74,7 +74,7 @@ h1 {
   text-align: center;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 6em 25vw 5em;
+  grid-template-rows: 0.2fr 1fr 0.05fr;
   grid-template-areas:
     "header"
     "project"
@@ -121,6 +121,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 .hiddenProject {
@@ -143,6 +144,7 @@ h1 {
 .navigationArrow {
   width: 50px;
   height: auto;
+  cursor: pointer;
 }
 #arrowLeft {
   transform: scaleX(-1);
