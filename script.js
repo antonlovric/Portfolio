@@ -8,23 +8,12 @@ function setDesc(element, description) {
   element.innerHTML = description;
 }
 
-function slideAnimation(direction) {
-  var projectImage;
-  projectImage = document.getElementById("projectImage");
-  
-  setTimeout(function(){
-      projectImage.style.transform = "translateY(0%)";
-  },700);
-  projectImage.style.transform = "translateY(-100%)";
-  
-}
-
 function nextProject() {
   let projectImage, projectDesc;
   
   projectImage = document.getElementById("projectImage");
   projectDesc = document.getElementById("projectDesc");
-  slideAnimation(0);
+  //slideAnimation();
   switch (projectIndex) {
     case 0:
       setImage(projectImage, "productLanding.png");

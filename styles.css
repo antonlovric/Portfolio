@@ -70,7 +70,7 @@ h1 {
 
 #projects {
   min-height: auto;
-
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #c7ac63;
   text-align: center;
   display: grid;
@@ -82,11 +82,9 @@ h1 {
     "navigation";
 }
 
-.projectsTitle {
-  color: #303841;
-}
-
 .projectTitle {
+  font-size: 1.7rem;
+  color: #0e0004;
   grid-area: header;
   display: flex;
   align-items: center;
@@ -143,18 +141,14 @@ h1 {
   overflow: hidden;
   border-radius: 50%;
   margin: 20px;
-  
 }
 
 #projectImage {
   transition: 0.5s all ease-in-out;
-
 }
 #projectImage:hover {
   transform: scale(1.2);
 }
-
-
 
 .imageDescription {
   background: var(--mainGray);
