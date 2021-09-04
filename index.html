@@ -1,18 +1,19 @@
-<html>
-  <head>
+<!DOCTYPE html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    ł<meta name="description", content="Portfolio website for Anton Lovrić">
+    <meta name="author" content="Anton Lovrić">
     <title>Portfolio</title>
     <script
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
+      defer
     ></script>
     <link rel="stylesheet" href="styles.css" />
 
     <script src="script.js" defer></script>
-    <script
-      src="https://kit.fontawesome.com/1b42504273.js"
-      crossorigin="anonymous"
-      defer
-    ></script>
+    
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -20,6 +21,7 @@
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#ffffff" />
   </head>
 
@@ -34,7 +36,7 @@
     <main>
       <section id="welcome-section">
         <div id="welcomeText">
-          <img
+          <img alt="AntonLovricAvatar" id="avatar"
             src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Prescription02&hairColor=Black&facialHairType=BeardLight&facialHairColor=Black&clotheType=Hoodie&clotheColor=Black&eyeType=Side&eyebrowType=Default&mouthType=Smile&skinColor=Light"
           />
           <h1>Hi, my name is Anton!</h1>
@@ -85,7 +87,7 @@
             </div>
           </div>
           <div class="wrapper" id="fourthProject">
-            <div class="cover" id="fourthProject">
+            <div class="cover" id="fourthCover">
               <h2>Javascript Documentation</h2>
             </div>
             <div class="project">
@@ -107,7 +109,7 @@
           <a
             id="profile-link"
             href="https://github.com/antonlovric"
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
             <figure class="contactInfo">
               <i class="fab fa-github"></i>
@@ -115,13 +117,13 @@
             </figure>
           </a>
 
-          <a href="mailto:antonlovric7@gmail.com" target="_blank">
+          <a href="mailto:antonlovric7@gmail.com" target="_blank" rel="noreferrer">
             <figure class="contactInfo">
               <i class="fas fa-envelope-square"></i>
               <figcaption>Send an email</figcaption>
             </figure>
           </a>
-          <a href="tel:0919825264" target="_blank">
+          <a href="tel:0919825264" target="_blank" rel="noreferrer">
             <figure class="contactInfo">
               <i class="fas fa-phone-square"></i>
               <figcaption>Call me</figcaption>
@@ -131,8 +133,13 @@
       </section>
 
       <footer>
-        <span id="copyright">&copy;Anton Lovrić, 2021. </span> <a href="#"></a>
+        <span id="copyright">&copy;Anton Lovrić, 2021. </span>
       </footer>
     </main>
+    <script
+      src="https://kit.fontawesome.com/1b42504273.js"
+      crossorigin="anonymous"
+      defer rel="noreferrer"
+    ></script>
   </body>
 </html>

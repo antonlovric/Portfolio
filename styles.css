@@ -73,6 +73,11 @@ h1 {
   text-align: center;
 }
 
+#avatar{
+  width: 18vw;
+  height: auto;
+}
+
 .welcomeDescription {
   color: var(--mainRed);
   font-size: 2rem;
