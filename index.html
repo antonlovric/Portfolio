@@ -5,7 +5,7 @@
     <meta name="description", content="Portfolio website for Anton Lovrić">
     <meta name="author" content="Anton Lovrić">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/main.css" />
 
     <script src="script.js" defer></script>
     
@@ -38,13 +38,13 @@
           <h1>Hi, my name is Anton!</h1>
           <h2 class="welcomeDescription">IT Student</h2>
         </div>
-        <div class="arrowDownWrapper"><a href="#bio"><img id="arrowDown" src="pointingDown.png"></div></a>
+        <div class="arrowDownWrapper"><a href="#bio"><img id="arrowDown" src="images/pointingDown.png"></div></a>
       </section>
 
       <section id="bio">
         <div class="container">
           <div class="imageArea">
-            <img alt="Anton Lovrić profile image" class="profileImage" src = "profilna.png">
+            <img alt="Anton Lovrić profile image" class="profileImage" src = "images/profilna.png">
           </div>
           
           <div class="bioText">
@@ -56,59 +56,30 @@
 
       <section id="projects">
         <h2 class="projectsTitle">Take a look at some of my projects!</h2>
-        <div class="projectSlide">
-          <div class="wrapper" id="firstProject">
-            <div class="cover" id="firstCover">
-              <h2>BMI Calculator</h2>
+        <div class="projectContainer">
+          <div class="currentProjectMask">
+            <div class="currentProject">
+              <img src="#" alt="#">
+              <h2>This is the first project, click for more info</h2>
             </div>
-            <div class="project">
-              <h2>BMI Calculator</h2>
-              <hr />
-              <p>
-                Webpage that allows you to calculate your BMI. On top of that
-                you get tips for leading a healthy lifestyle according to your
-                BMI.
-              </p>
-            </div>
-          </div>
-          <div class="wrapper" id="secondProject">
-            <div class="cover" id="secondCover">
-              <h2>Portfolio Page</h2>
-            </div>
-            <div class="project">
-              <h2>Portfolio Page</h2>
-              <hr />
-              <p>
-                Check out the code behind this website! Made in vanilla HTML,
-                CSS and JS, using VS Code on Ubuntu.
-              </p>
-            </div>
-          </div>
-          <div class="wrapper" id="thirdProject">
-            <div class="cover" id="thirdCover">
-              <h2>Survey Page</h2>
-            </div>
-            <div class="project">
-              <h2>Survey Page</h2>
-              <hr />
-              <p>
-                Webpage that represents a mock survey form. Clone website made as part of the FreeCodeCamp Web Design course.
-              </p>
-            </div>
-          </div>
-          <div class="wrapper" id="fourthProject">
-            <div class="cover" id="fourthCover">
-              <h2>Javascript Documentation</h2>
-            </div>
-            <div class="project">
-              <h2>Javascript Documentation</h2>
-              <hr />
-              <p>
-                Collection of many important JavaScript features. Clone website made as part of the FreeCodeCamp Web Design course.
-              </p>
+            <div class="projectOverlay">
+              <h2>This is a project</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, unde.</p>
+              <div class="buttonContainer">
+                <button class="demo">Demo</button>
+                <button class="code">Github</button>
+              </div>
+              
             </div>
           </div>
           
+          <div class="nextProject"></div>
+        </div>
+        <div class="projectNavigation">
+          <img src="images/navigationArrow.png" alt="arrow pointing left" class="arrow arrowLeft">
+          <img src="images/navigationArrow.png" alt="arrow pointing left" class="arrow arrowRight">
+        </div>
+        
       </section>
 
       <section id="contact">

@@ -1,0 +1,73 @@
+@use "./variables" as *;
+
+#projects {
+  background: $mainGray;
+  outline: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5em;
+}
+.projectsTitle {
+  text-align: center;
+}
+.projectContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 2px solid white;
+  width: 400px;
+  text-align: center;
+  height: 300px;
+}
+
+.currentProjectMask {
+  position: relative;
+  //   background-color: yellow;
+  height: 100%;
+  width: 100%;
+}
+
+.currentProject,
+.projectOverlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.currentProject {
+  z-index: 0;
+  background-color: whitesmoke;
+  opacity: 0.2;
+}
+.projectOverlay {
+  z-index: 1;
+  background-color: black;
+  opacity: 0;
+  color: whitesmoke;
+  transition: all 0.3s ease-out;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.arrowLeft {
+  transform: rotate(180deg);
+  margin-right: 10em;
+}
+.arrow {
+  width: 70px;
+  margin-bottom: 2em;
+}
+
+.demo,
+.code {
+  width: 6em;
+  height: 3em;
+}
+
+.buttonContainer {
+  position: absolute;
+  bottom: 10px;
+}
