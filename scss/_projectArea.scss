@@ -22,8 +22,20 @@
   height: 300px;
 }
 
+.projectsContainer {
+  display: flex;
+  flex-direction: row;
+}
+
 .currentProjectMask {
   position: relative;
+  //   background-color: yellow;
+  height: 100%;
+  width: 100%;
+}
+
+.nextProjectMask {
+  position: absolute;
   //   background-color: yellow;
   height: 100%;
   width: 100%;
