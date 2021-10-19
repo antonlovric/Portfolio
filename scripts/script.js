@@ -1,83 +1,42 @@
-const projectMask = document.querySelector(".projectMask");
-const projectGroup = document.querySelector(".projectGroup");
-const projectOverlays = document.querySelectorAll(".projectOverlay");
+var swiper = new Swiper(".swiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    bulletActiveClass: "bulletActive",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  loop: true,
+  // slidesPerView: "auto",
+  spaceBetween: 30,
+});
 
-let direction;
-projectOverlays.forEach((overlay) => {
+const overlays = document.querySelectorAll(".projectOverlay");
+
+overlays.forEach((overlay) => {
   overlay.addEventListener("click", function () {
-    handleOverlayStatus(overlay);
+    toggleOverlay(overlay);
   });
 });
 
-function enableButtons(overlay) {
-  const buttons = overlay.querySelectorAll("button");
-  console.log(buttons);
-  buttons.forEach((button) => {
-    button.disabled = false;
-  });
-}
-
-function disableButtons(overlay) {
-  const buttons = overlay.querySelectorAll("button");
-  buttons.forEach((button) => {
-    button.disabled = true;
-  });
-}
-
-function showOverlay(overlay) {
-  overlay.classList.add("showOverlay");
-  overlay.classList.remove("hideOverlay");
-  enableButtons(overlay);
-}
-
-function hideOverlay(overlay) {
-  overlay.classList.add("hideOverlay");
-  overlay.classList.remove("showOverlay");
-  disableButtons(overlay);
-}
-
-function handleOverlayStatus(overlay) {
-  if (overlay.classList.contains("showOverlay")) {
-    hideOverlay(overlay);
-  } else showOverlay(overlay);
-}
-document.querySelector(".arrowLeft").addEventListener("click", function () {
-  if (direction == -1) {
-    direction = 1;
-    projectMask.appendChild(projectMask.firstElementChild);
-  }
-  projectGroup.style.justifyContent = "flex-end";
-  projectMask.style.transform = "translate(25%)";
-});
-document.querySelector(".arrowRight").addEventListener("click", function () {
-  direction = -1;
-  projectGroup.style.justifyContent = "flex-start";
-  projectMask.style.transform = "translate(-25%)";
-});
-
-projectMask.addEventListener(
-  "transitionend",
-  function () {
-    if (direction == 1) {
-      projectMask.prepend(projectMask.lastElementChild);
-    } else {
-      projectMask.appendChild(projectMask.firstElementChild);
-    }
-    projectMask.style.transition = "none";
-    projectMask.style.transform = "translate(0)";
-    setTimeout(() => {
-      projectMask.style.transition = "all 1s";
+function refreshButtons(buttons, show) {
+  if (show) {
+    buttons.forEach((button) => {
+      button.disabled = false;
     });
-  },
-  false
-);
+  } else {
+    buttons.forEach((button) => {
+      button.disabled = true;
+    });
+  }
+}
 
-import * as myModule from "./intersectionObserver.js";
-
-window.addEventListener(
-  "load",
-  (event) => {
-    myModule.initializeObserver();
-  },
-  false
-);
+function toggleOverlay(overlay) {
+  overlay.classList.toggle("showOverlay");
+  const buttons = overlay.querySelectorAll("button");
+  if (overlay.classList.contains("showOverlay")) {
+    refreshButtons(buttons, true);
+  } else refreshButtons(buttons, false);
+}

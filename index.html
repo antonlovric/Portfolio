@@ -5,8 +5,12 @@
     <meta name="description", content="Portfolio website for Anton Lovrić">
     <meta name="author" content="Anton Lovrić">
     <title>Portfolio</title>
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="styles/main.css" />
-
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
     <script type="module" src="scripts/script.js"  defer></script>
     <script type="module" src="scripts/intersectionObserver.js" ></script>
     
@@ -19,6 +23,7 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#ffffff" />
+    
   </head>
 
   <body>
@@ -54,74 +59,164 @@
           </div>
         </div>
       </section>
-
-      <section id="projects">
-        <h2 class="projectSectionTitle">Have a look at some of my projects!</h2>
-        <div class="projectGroup">
-        <div class="projectMask">
-          <div class="project">
-            <h2 class="projectTitle">Alojzije Janković Website</h2>
-            <img src="images/alojzijeJankovicProject.jpg" alt="Alojzije Janković Website" class="projectImage currentProjectImage">
-            <div class="projectOverlay">
-             <h2> Alojzije Janković Website</h2>
-             <div class="underline"></div> 
-             <p class="projectDescription">This is a website made for Croatian chess grandmaster Alojzije Janković. It was a lengthy project but making it was a lot of fun anyways. I used an external API called AbChess (thanks to the creator!) that helped a lot about the display and functionality of a chess board. The website includes multiple web pages and I used technologies like SASS, JavaScript Modules and Dynamic Module Loading for the first time while building this project. It is written completely in Croatian but I hope you like it nonetheless!</p>
-             <div class="projectButtons">
-               <button class="demo" onclick="window.open(`https://antonlovric.github.io/AlojzijeJankovicWebsite/pages/index.html`)">Demo</button>
-               <button class="githubRepo" onclick="window.open(`https://github.com/antonlovric/AlojzijeJankovicWebsite`)">Github</button>
-             </div>
-            </div>
-          </div>
-          <div class="project">
-            <h2 class="projectTitle">BMI Calculator</h2>
-
-            <img src="images/bmiProject.jpg" alt="BMI Project" class="projectImage currentProjectImage">
-            <div class="projectOverlay">
-              <h2> BMI Calculator</h2>
-              <div class="underline"></div> 
-              <p class="projectDescription">This website has a very simple function. After the user inputs their height and weight their BMI (Body Mass Index) gets calculated and they get appropriate feedback. The feedback gives some tips how the user can improve their health and what they should do. This project was made with the help of an external library called progressbarjs but everything else was made in pure HTML, CSS and JavaScript.</p>
-              <div class="projectButtons">
-                <button class="demo" onclick="window.open(`https://antonlovric.github.io/BMI/`)">Demo</button>
-                <button class="githubRepo" onclick="window.open(`https://github.com/antonlovric/BMI`)">Github</button>
-              </div>
-            </div>
-
-          </div>
-          <div class="project">
-            <h2 class="projectTitle">Portfolio Website</h2>
-            <img src="images/portfolioProject.png" alt="Portfolio" class="projectImage nextProjectImage">
-            <div class="projectOverlay">
-              
-              <h2> Portfolio Website</h2>
-              <div class="underline"></div> 
-              <p class="projectDescription">Here you can see the process of making this portfolio website! Making it was very fun and I took inspiration from a task I got from the freeCodeCamp Web Design course. It started as a pure HTML, CSS and JS project but at the end I implemented SASS. It helped a lot with the organization and optimisation of the CSS. It will always be updated with new project and features, so keep an eye out! ;)</p>
-              <div class="projectButtons">
-                <button class="demo" onclick="window.open(`https://antonlovric.github.io/Portfolio/`)">Demo</button>
-                <button class="githubRepo" onclick="window.open(`https://github.com/antonlovric/Portfolio`)">Github</button>
-              </div>
-            </div>
-          </div>
-          <div class="project">
-            <h2 class="projectTitle">freeCodeCamp Course Certificate</h2>
-            <div class="underline"></div> 
-            <img src="images/freeCodeCampProject.png" alt="freeCodeCamp Project" class="projectImage nextProjectImage">
-            <div class="projectOverlay">
-              <h2> freeCodeCamp Course Certificate</h2>
-              <p class="projectDescription">The freeCodeCamp Responsive Web Design course was detrimental to my start as a front end developer. It gave me a good introduction to front end development and gave me motivation to build on the knowledge I got from this course. Later on I finally built out the projects required for certification and you can see them by clicking on the button below! It includes multiple projects including a tribute page, survey form, technical documentation page and product landing page. There you can see the task itself and my solution.</p>
-              <div class="projectButtons">
-                <button class="certificationButton" onclick="window.open(`https://www.freecodecamp.org/certification/antonlovric/responsive-web-design`)">Certification</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-        <div class="projectNavigation">
-          <img src="images/navigationArrow.png" alt="arrow pointing left" class="arrow arrowLeft">
-          <img src="images/navigationArrow.png" alt="arrow pointing left" class="arrow arrowRight">
-        </div>
+      <section class="projects">
         
-      </section>
-
+        
+     
+      <div class="swiper">
+        <h2 class="projectSectionTitle">Have a look at some of my projects!</h2>
+        <div class="projectGroup swiper-wrapper">
+          <div class="project swiper-slide">
+            <h2 class="projectTitle">Alojzije Janković Website</h2>
+            <img
+              src="images/alojzijeJankovicProject.jpg"
+              alt="Alojzije Janković Website"
+              class="projectImage currentProjectImage"
+            />
+            <div class="projectOverlay">
+              <h2>Alojzije Janković Website</h2>
+              <div class="underline"></div>
+              <p class="projectDescription">
+                This is a website made for Croatian chess grandmaster Alojzije
+                Janković. It was a lengthy project but making it was a lot of fun
+                anyways. I used an external API called AbChess (thanks to the
+                creator!) that helped a lot about the display and functionality of
+                a chess board. The website includes multiple web pages and I used
+                technologies like SASS, JavaScript Modules and Dynamic Module
+                Loading for the first time while building this project. It is
+                written completely in Croatian but I hope you like it nonetheless!
+              </p>
+              <div class="projectButtons">
+                <button
+                  disabled="true"
+                  class="demo"
+                  onclick="window.open(`https://antonlovric.github.io/AlojzijeJankovicWebsite/pages/index.html`)"
+                >
+                  Demo
+                </button>
+                <button
+                  disabled="true"
+                  class="githubRepo"
+                  onclick="window.open(`https://github.com/antonlovric/AlojzijeJankovicWebsite`)"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project swiper-slide">
+            <h2 class="projectTitle">BMI Calculator</h2>
+  
+            <img
+              src="images/bmiProject.jpg"
+              alt="BMI Project"
+              class="projectImage currentProjectImage"
+            />
+            <div class="projectOverlay">
+              <h2>BMI Calculator</h2>
+              <div class="underline"></div>
+              <p class="projectDescription">
+                This website has a very simple function. After the user inputs
+                their height and weight their BMI (Body Mass Index) gets
+                calculated and they get appropriate feedback. The feedback gives
+                some tips how the user can improve their health and what they
+                should do. This project was made with the help of an external
+                library called progressbarjs but everything else was made in pure
+                HTML, CSS and JavaScript.
+              </p>
+              <div class="projectButtons">
+                <button
+                  disabled="true"
+                  class="demo"
+                  onclick="window.open(`https://antonlovric.github.io/BMI/`)"
+                >
+                  Demo
+                </button>
+                <button
+                  disabled="true"
+                  class="githubRepo"
+                  onclick="window.open(`https://github.com/antonlovric/BMI`)"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project swiper-slide">
+            <h2 class="projectTitle">Portfolio Website</h2>
+            <img
+              src="images/portfolioProject.png"
+              alt="Portfolio"
+              class="projectImage nextProjectImage"
+            />
+            <div class="projectOverlay">
+              <h2>Portfolio Website</h2>
+              <div class="underline"></div>
+              <p class="projectDescription">
+                Here you can see the process of making this portfolio website!
+                Making it was very fun and I took inspiration from a task I got
+                from the freeCodeCamp Web Design course. It started as a pure
+                HTML, CSS and JS project but at the end I implemented SASS. It
+                helped a lot with the organization and optimisation of the CSS. It
+                will always be updated with new project and features, so keep an
+                eye out! ;)
+              </p>
+              <div class="projectButtons">
+                <button
+                  disabled="true"
+                  class="demo"
+                  onclick="window.open(`https://antonlovric.github.io/Portfolio/`)"
+                >
+                  Demo
+                </button>
+                <button
+                  disabled="true"
+                  class="githubRepo"
+                  onclick="window.open(`https://github.com/antonlovric/Portfolio`)"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project swiper-slide">
+            <h2 class="projectTitle">freeCodeCamp Course Certificate</h2>
+            <div class="underline"></div>
+            <img
+              src="images/freeCodeCampProject.png"
+              alt="freeCodeCamp Project"
+              class="projectImage nextProjectImage"
+            />
+            <div class="projectOverlay">
+              <h2>freeCodeCamp Course Certificate</h2>
+              <p class="projectDescription">
+                The freeCodeCamp Responsive Web Design course was detrimental to
+                my start as a front end developer. It gave me a good introduction
+                to front end development and gave me motivation to build on the
+                knowledge I got from this course. Later on I finally built out the
+                projects required for certification and you can see them by
+                clicking on the button below! It includes multiple projects
+                including a tribute page, survey form, technical documentation
+                page and product landing page. There you can see the task itself
+                and my solution.
+              </p>
+              <div class="projectButtons">
+                <button
+                  disabled="true"
+                  class="certificationButton"
+                  onclick="window.open(`https://www.freecodecamp.org/certification/antonlovric/responsive-web-design`)"
+                >
+                  Certification
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
       <section id="contact">
         <h2 id="contactTitle">Let's work together!</h2>
         <h3>Here's how you can contact me</h3>
@@ -157,6 +252,7 @@
         <span id="copyright">&copy; Anton Lovrić, 2021. </span>
       </footer>
     </main>
+    
     <script
       src="https://kit.fontawesome.com/1b42504273.js"
       crossorigin="anonymous"

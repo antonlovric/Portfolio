@@ -1,154 +1,82 @@
 @use "./variables" as *;
 
-#projects {
-  background: $mainGray;
-  outline: 2px solid white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 5em;
+.swiper {
+  width: 700px;
+  height: 500px;
+}
+
+.projects {
   width: 100%;
-}
-.projectsTitle {
-  text-align: center;
-}
-.projectContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  outline: 2px solid white;
-  width: 400px;
-  text-align: center;
-  height: 300px;
+  background-color: $mainGray;
+  padding-bottom: 10em;
 }
 
-.projectsContainer {
-  display: flex;
-  flex-direction: row;
-}
-
-.projectMask {
-  position: relative;
-  outline: 2px solid yellow;
-  background: transparent;
-  width: 400%;
-  height: 100%;
-  display: flex;
-  flex-shrink: 0;
-  transition: all 1s ease-in-out;
-}
-
-.projectImage {
+.swiper-slide {
   width: 100%;
-  height: 100%;
-  position: absolute;
+  height: 150%;
 }
 
-.projectGroup {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-  height: 450px;
-  width: 550px;
-  flex-shrink: 0;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.project {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 25%;
-  flex-shrink: 0;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-}
 .projectOverlay {
+  /* opacity: 0; */
+  background-color: #b8303f;
   position: absolute;
-  width: 100%;
   height: 100%;
-  z-index: 1;
-  background-color: black;
+  width: 100%;
+  top: 0;
   opacity: 0;
-  color: whitesmoke;
-  cursor: pointer;
-  padding: 20px;
-  h2 {
-    text-align: center;
-    color: $textLight;
-  }
-  p {
-    margin-top: 2em;
-    text-align: justify;
-    color: $textLight;
-  }
+  transition: 0.5s ease-in-out;
 }
 
-.underline {
-  width: 60%;
-  height: 10px;
-  margin: auto;
-  border-radius: 5px;
-  margin-top: 0.5em;
-  background-color: $textLight;
+.showOverlay {
+  opacity: 0.9;
+}
+
+.projectOverlay > h2 {
+  text-align: center;
+}
+
+.projectDescription {
+  padding: 2em;
+  text-align: justify;
 }
 
 .projectButtons {
   display: flex;
-  position: absolute;
-  bottom: 2em;
-  width: calc(100% - 40px);
   justify-content: space-evenly;
-  button {
-    width: 7em;
-    height: 5em;
-    padding: 5px;
-    text-align: center;
-    font-size: 12px;
-  }
 }
 
-.showOverlay {
-  animation: showOverlay 0.5s forwards ease-in-out;
-}
-.hideOverlay {
-  animation: hideOverlay 0.5s forwards ease-in-out;
+.projectButtons > button {
+  padding: 1em;
 }
 
-@keyframes showOverlay {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.9;
-  }
-}
-@keyframes hideOverlay {
-  from {
-    opacity: 0.9;
-  }
-  to {
-    opacity: 0;
-  }
+.bulletActive {
+  background-color: #b8303f;
+  opacity: 1;
 }
 
-.arrowLeft {
-  transform: rotate(180deg);
-  margin-right: 10em;
-}
-.arrow {
-  width: 70px;
-  margin-bottom: 2em;
-  cursor: pointer;
+.swiper-button-next,
+.swiper-button-prev {
+  color: #b8303f;
 }
 
-.buttonContainer {
-  position: absolute;
-  bottom: 10px;
-  display: flex;
-  justify-content: space-evenly;
+.project {
+  width: 600px;
+  height: 400px;
+  position: relative;
+}
+
+.projectImage {
+  height: 100%;
   width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.projectSectionTitle {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.projectTitle {
+  text-align: center;
 }
