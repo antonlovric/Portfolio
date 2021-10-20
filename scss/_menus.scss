@@ -1,5 +1,5 @@
 @use "./variables" as *;
-#navbar {
+.navbar {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -15,6 +15,11 @@
 
   z-index: 2;
   border: 1px solid black;
+}
+
+.grayBackground {
+  background: $mainGray;
+  color: white;
 }
 
 .navigationLink {

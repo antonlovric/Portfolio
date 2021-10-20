@@ -28,7 +28,7 @@
 
   <body>
     <header>
-      <nav id="navbar">
+      <nav class="navbar">
         <a href="#welcome-section" class="navigationLink">Home</a>
         <a href="#bio" class="navigationLink">About</a>
         <a href="#projects" class="navigationLink">Work</a>
@@ -61,11 +61,12 @@
       </section>
       <section class="projects">
         
-        
+        <h2 class="projectSectionTitle">Have a look at some of my projects!</h2>
      
       <div class="swiper">
-        <h2 class="projectSectionTitle">Have a look at some of my projects!</h2>
+        
         <div class="projectGroup swiper-wrapper">
+          
           <div class="project swiper-slide">
             <h2 class="projectTitle">Alojzije Janković Website</h2>
             <img
@@ -205,6 +206,31 @@
                   disabled="true"
                   class="certificationButton"
                   onclick="window.open(`https://www.freecodecamp.org/certification/antonlovric/responsive-web-design`)"
+                >
+                  Certification
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project swiper-slide">
+            <h2 class="projectTitle">MOOC Course Certificate</h2>
+            <div class="underline"></div>
+            <img
+              src="images/mooc.webp"
+              alt="MOOC Project"
+              class="projectImage nextProjectImage"
+            />
+            <div class="projectOverlay">
+              <h2>MOOC Course Certificate</h2>
+              <p class="projectDescription">
+                This Java course created by the University of Helsinki helped a lot in my overall education as a developer. It helped me build on existing knowledge from other programming languages like C# and I got a better overall feel for programming. It focuses heavy on the basics of Java and builds on the principles of Object Oriented Programming.
+              </p>
+              <div class="projectButtons">
+                <button
+                  disabled="true"
+                  class="certificationButton"
+                  onclick="window.open(`https://certificates.mooc.fi/validate/8gs3tkuj5wx`)"
                 >
                   Certification
                 </button>

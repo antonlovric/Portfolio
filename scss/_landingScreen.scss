@@ -60,3 +60,13 @@ h1 {
   font-style: italic;
   font-weight: 200;
 }
+
+@media only screen and (max-width: 600px) {
+  #avatar {
+    width: 300px;
+  }
+  h1 {
+    color: $mainWhite;
+    font-size: 4rem;
+  }
+}

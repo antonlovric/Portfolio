@@ -2,13 +2,14 @@
 
 .swiper {
   width: 700px;
-  height: 500px;
+  height: 400px;
+  border-radius: 10px;
 }
 
 .projects {
   width: 100%;
   background-color: $mainGray;
-  padding-bottom: 10em;
+  padding: 3em;
 }
 
 .swiper-slide {
@@ -24,11 +25,21 @@
   width: 100%;
   top: 0;
   opacity: 0;
+  padding: 1em;
   transition: 0.5s ease-in-out;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  h2 {
+    font-size: 1.7rem;
+  }
+  p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+  }
 }
 
 .showOverlay {
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .projectOverlay > h2 {
@@ -46,17 +57,24 @@
 }
 
 .projectButtons > button {
-  padding: 1em;
+  cursor: pointer;
+  background-color: $mainGray;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 1.5em;
+  font-size: 0.9rem;
+  letter-spacing: 0.07rem;
 }
 
 .bulletActive {
-  background-color: #b8303f;
+  background-color: $mainRed;
   opacity: 1;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #b8303f;
+  color: $mainRed;
 }
 
 .project {
@@ -74,9 +92,32 @@
 
 .projectSectionTitle {
   text-align: center;
-  margin-bottom: 2em;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin-bottom: 5em;
+  // margin-top: 2em;
 }
 
-.projectTitle {
-  text-align: center;
+@media only screen and (max-width: 600px) {
+  .swiper,
+  .project {
+    width: 300px;
+    height: 500px;
+  }
+  .projectImage {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+  }
+
+  .projectOverlay {
+    h2 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+  }
 }
