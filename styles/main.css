@@ -109,6 +109,10 @@ h1 {
     font-size: 4rem;
   }
 }
+#bio {
+  scroll-margin-top: 5rem;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -171,6 +175,7 @@ h1 {
   width: 100%;
   background-color: #303841;
   padding: 3em;
+  scroll-margin-top: 5rem;
 }
 
 .swiper-slide {

@@ -1,4 +1,9 @@
 @use "./variables" as *;
+
+#bio {
+  scroll-margin-top: 5rem;
+}
+
 .container {
   display: flex;
   align-items: center;
