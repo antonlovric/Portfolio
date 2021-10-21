@@ -106,7 +106,11 @@ h1 {
 
   h1 {
     color: #f0f0f0;
-    font-size: 4rem;
+    font-size: 3rem;
+  }
+
+  .navigationLink {
+    font-size: 1rem;
   }
 }
 #bio {
@@ -133,6 +137,7 @@ h1 {
   display: flex;
   flex-direction: column;
   font-size: 1.2rem;
+  color: #fffafa;
 }
 
 .profileImage {
@@ -267,7 +272,7 @@ h1 {
 @media only screen and (max-width: 600px) {
   .swiper,
 .project {
-    width: 300px;
+    width: 90%;
     height: 500px;
   }
 
