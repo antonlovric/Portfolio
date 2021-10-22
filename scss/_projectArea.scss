@@ -30,6 +30,7 @@
   transition: 0.5s ease-in-out;
   font-family: "Roboto", sans-serif;
   cursor: pointer;
+  color: $textLight;
   h2 {
     font-size: 1.7rem;
   }
@@ -100,7 +101,63 @@
   // margin-top: 2em;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 991px) {
+  .swiper,
+  .project {
+    width: 90%;
+    height: 500px;
+  }
+  .projectImage {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+  }
+
+  .projectOverlay {
+    h2 {
+      font-size: 2.2rem;
+    }
+    p {
+      font-size: 1.3rem;
+      line-height: 1.5;
+    }
+  }
+  .projectButtons > button {
+    padding: 1.5em;
+    font-size: 1rem;
+    letter-spacing: 0.07rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .swiper,
+  .project {
+    width: 90%;
+    height: 500px;
+  }
+  .projectImage {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+  }
+
+  .projectOverlay {
+    h2 {
+      font-size: 1.6rem;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+  .projectButtons > button {
+    padding: 1.5em;
+    font-size: 1rem;
+    letter-spacing: 0.07rem;
+  }
+}
+
+@media only screen and (max-width: 479px) {
   .swiper,
   .project {
     width: 90%;
@@ -117,8 +174,13 @@
       font-size: 1rem;
     }
     p {
-      font-size: 0.9rem;
+      font-size: 0.78rem;
       line-height: 1.5;
     }
+  }
+  .projectButtons > button {
+    padding: 1.2em;
+    font-size: 0.7rem;
+    letter-spacing: 0.07rem;
   }
 }
