@@ -158,6 +158,9 @@ h1 {
   font-size: 1.2rem;
   color: #fffafa;
 }
+.bioText a {
+  color: #fffafa;
+}
 
 .profileImage {
   width: 350px;
