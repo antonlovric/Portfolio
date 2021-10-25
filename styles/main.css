@@ -102,7 +102,7 @@ h1 {
 
 @media only screen and (max-width: 767px) {
   #welcome-section {
-    min-height: 150vh;
+    min-height: 100vh;
   }
 
   #avatar {
@@ -119,6 +119,10 @@ h1 {
   }
 }
 @media only screen and (max-width: 479px) {
+  #welcome-section {
+    min-height: 100vh;
+  }
+
   #avatar {
     width: 250px;
   }
