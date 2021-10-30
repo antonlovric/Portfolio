@@ -10,7 +10,7 @@
   href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
 />
     <link rel="stylesheet" href="styles/main.css" />
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"  defer></script>
     <script type="module" src="scripts/script.js"  defer></script>
     
 
@@ -59,9 +59,9 @@
         </div>
       </section>
       <section id="projects" class="projects">
-        
-        <h2 class="projectSectionTitle">Have a look at some of my projects!</h2>
-     
+        <h2 class="projectSectionTitle">Projects</h2>
+        <p class="projectIntro">Here you can scroll through some of the projects I have made along my front-end development journey. If you want to know more about a particular project, feel free to click on it and get access to its github repository and a live demo of the website!</p>
+        <h3 class="projectTitle">Alojzije Janković Website</h3>
       <div class="swiper">
         
         <div class="projectGroup swiper-wrapper">
@@ -78,7 +78,9 @@
             </picture>
             
             <div class="projectOverlay">
+              <div class="overlayTitleContainer">
               <h2>Alojzije Janković Website</h2>
+            </div>
               <div class="underline"></div>
               <p class="projectDescription">
                 This is a website made for Croatian chess grandmaster Alojzije
@@ -118,7 +120,9 @@
             </picture>
             
             <div class="projectOverlay">
+              <div class="overlayTitleContainer">
               <h2>BMI Calculator</h2>
+            </div>
               <div class="underline"></div>
               <p class="projectDescription">
                 This website has a very simple function. After the user inputs
@@ -158,7 +162,9 @@
             </picture>
             
             <div class="projectOverlay">
+              <div class="overlayTitleContainer">
               <h2>Portfolio Website</h2>
+            </div>
               <div class="underline"></div>
               <p class="projectDescription">
                 Here you can see the process of making this portfolio website!
@@ -188,6 +194,43 @@
             </div>
           </div>
           <div class="project swiper-slide">
+            <h2 class="projectTitle">Sunnyside Agency Landing Page</h2>
+            <picture>
+              <source media="(max-width: 472px)" srcset="images/sunnysideAgencyMobile.png">
+              <img
+              src="images/sunnysideAgencyDesktop.png"
+              alt="Sunnyside Agency Landing Page"
+              class="projectImage currentProjectImage"
+            />
+            </picture>
+            
+            <div class="projectOverlay">
+              <div class="overlayTitleContainer">
+              <h2>Sunnyside Agency Landing Page</h2>
+            </div>
+              <div class="underline"></div>
+              <p class="projectDescription">
+                This was a challenge from a website called Frontend Mentor (https://www.frontendmentor.io). This was the first challenge i solved on this website and it was a lot of fun! The design looks awesome and all in all building this website was a cool experience. I used the usual tools such as HTML/CSS , vanilla JavaScript and SASS.
+              </p>
+              <div class="projectButtons">
+                <button
+                  disabled="true"
+                  class="demo"
+                  onclick="window.open(`https://antonlovric.github.io/sunnyside-agency-landing-page-main/`)"
+                >
+                  Demo
+                </button>
+                <button
+                  disabled="true"
+                  class="githubRepo"
+                  onclick="window.open(`https://github.com/antonlovric/sunnyside-agency-landing-page-main`)"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project swiper-slide">
             <h2 class="projectTitle">freeCodeCamp Course Certificate</h2>
             <div class="underline"></div>
             <picture>
@@ -202,7 +245,9 @@
          
             
             <div class="projectOverlay">
+              <div class="overlayTitleContainer">
               <h2>freeCodeCamp Course Certificate</h2>
+            </div>
               <p class="projectDescription">
                 The freeCodeCamp Responsive Web Design course was detrimental to
                 my start as a front end developer. It gave me a good introduction
@@ -237,7 +282,9 @@
               class="projectImage nextProjectImage"
             />
             <div class="projectOverlay">
+              <div class="overlayTitleContainer">
               <h2>MOOC Course Certificate</h2>
+            </div>
               <p class="projectDescription">
                 This Java course created by the University of Helsinki helped a lot in my overall education as a developer. It helped me build on existing knowledge from other programming languages like C# and I got a better overall feel for programming. It focuses heavy on the basics of Java and builds on the principles of Object Oriented Programming.
               </p>

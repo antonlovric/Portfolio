@@ -17,13 +17,16 @@
   height: 8vh;
   background: #be3144;
   color: #f0f0f0;
-  z-index: 2;
-  border: 1px solid black;
+  z-index: 10;
 }
 
 .grayBackground {
-  background: #303841;
+  background: #45567d;
   color: white;
+}
+.grayBackground .navigationLink:hover {
+  background: #be3144;
+  transition-duration: 0.5s;
 }
 
 .navigationLink {
@@ -31,6 +34,7 @@
   font-size: 1.6rem;
   text-decoration: none;
   color: #f0f0f0;
+  border-radius: 10px;
 }
 
 .navigationLink:hover {
@@ -237,6 +241,7 @@ h1 {
 
 .projectOverlay {
   /* opacity: 0; */
+  z-index: 15;
   background-color: #b8303f;
   position: absolute;
   height: 100%;
@@ -261,8 +266,13 @@ h1 {
   opacity: 0.95;
 }
 
-.projectOverlay > h2 {
+.overlayTitleContainer {
   text-align: center;
+  border-bottom: 5px solid #303841;
+  padding-bottom: 0.5em;
+  width: 70%;
+  margin: auto;
+  position: relative;
 }
 
 .projectDescription {
@@ -309,12 +319,37 @@ h1 {
   top: 0;
 }
 
+.projectTitle {
+  text-align: center;
+  color: #fffafa;
+  letter-spacing: 1px;
+  margin-bottom: 0.5em;
+  font-size: 3.5rem;
+  border-bottom: 5px solid #be3144;
+  margin: auto;
+  padding-bottom: 0.2em;
+  margin-bottom: 1em;
+  width: 70rem;
+}
+
+.projectIntro {
+  color: #fffafa;
+  font-size: 1.5rem;
+  width: 60%;
+  text-align: justify;
+  margin: auto;
+  margin-bottom: 5em;
+  line-height: 1.5;
+}
+
 .projectSectionTitle {
   text-align: center;
-  font-size: 2rem;
+  font-size: 4rem;
   font-family: "Roboto", sans-serif;
-  color: white;
-  margin-bottom: 2em;
+  color: #fffafa;
+  margin: auto;
+  padding-bottom: 0.5em;
+  width: 70%;
 }
 
 @media only screen and (max-width: 991px) {

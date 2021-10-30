@@ -13,13 +13,16 @@
   background: $mainRed;
   color: $mainWhite;
 
-  z-index: 2;
-  border: 1px solid black;
+  z-index: 10;
 }
 
 .grayBackground {
-  background: $mainGray;
+  background: $mainBlue;
   color: white;
+  .navigationLink:hover {
+    background: $mainRed;
+    transition-duration: 0.5s;
+  }
 }
 
 .navigationLink {
@@ -27,6 +30,7 @@
   font-size: 1.6rem;
   text-decoration: none;
   color: $mainWhite;
+  border-radius: 10px;
 }
 
 .navigationLink:hover {

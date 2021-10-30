@@ -20,6 +20,7 @@
 
 .projectOverlay {
   /* opacity: 0; */
+  z-index: 15;
   background-color: #b8303f;
   position: absolute;
   height: 100%;
@@ -44,8 +45,13 @@
   opacity: 0.95;
 }
 
-.projectOverlay > h2 {
+.overlayTitleContainer {
   text-align: center;
+  border-bottom: 5px solid $mainGray;
+  padding-bottom: 0.5em;
+  width: 70%;
+  margin: auto;
+  position: relative;
 }
 
 .projectDescription {
@@ -92,12 +98,40 @@
   top: 0;
 }
 
-.projectSectionTitle {
+.projectTitle {
   text-align: center;
-  font-size: 2rem;
+  color: $textLight;
+  // text-shadow: 1px 1px black;
+  letter-spacing: 1px;
+  margin-bottom: 0.5em;
+  font-size: 3.5rem;
+  border-bottom: 5px solid $mainRed;
+  margin: auto;
+  padding-bottom: 0.2em;
+  margin-bottom: 1em;
+  width: 70rem;
+}
+
+.projectIntro {
+  color: $textLight;
+  font-size: 1.5rem;
+  width: 60%;
+  text-align: justify;
+  margin: auto;
+  margin-bottom: 5em;
+  line-height: 1.5;
+}
+
+.projectSectionTitle {
+  // border-bottom: 5px solid $mainRed;
+  text-align: center;
+  font-size: 4rem;
   font-family: "Roboto", sans-serif;
-  color: white;
-  margin-bottom: 2em;
+  color: $textLight;
+  margin: auto;
+  padding-bottom: 0.5em;
+  // margin-bottom: 1em;
+  width: 70%;
   // margin-top: 2em;
 }
 
