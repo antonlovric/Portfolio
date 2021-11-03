@@ -198,17 +198,17 @@
     height: 500px;
   }
   .projectImage {
-    object-fit: cover;
+    object-fit: fill;
     position: absolute;
     top: 0;
   }
 
   .projectOverlay {
     h2 {
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
     p {
-      font-size: 0.78rem;
+      font-size: 0.86rem;
       line-height: 1.5;
     }
   }
@@ -216,5 +216,12 @@
     padding: 1.2em;
     font-size: 0.7rem;
     letter-spacing: 0.07rem;
+  }
+  .projectSectionTitle {
+    font-size: 1.8rem;
+  }
+  .projectIntro {
+    font-size: 1.2rem;
+    max-width: 20rem;
   }
 }
