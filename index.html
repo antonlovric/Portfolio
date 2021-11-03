@@ -10,21 +10,19 @@
   href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
 />
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"  defer></script>
     <script type="module" src="scripts/script.js"  defer></script>
-    
-
-    
-
-<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
-<link rel="manifest" href="./images/site.webmanifest">
-<link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="./images/favicon.ico">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-config" content="./images/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
+        
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="./images/site.webmanifest">
+    <link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="./images/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
 
     <meta name="msapplication-TileColor" content="#da532c" />
@@ -45,37 +43,37 @@
     <main>
       <section id="welcome-section">
         <div id="welcomeText">
-          <img alt="AntonLovricAvatar" id="avatar"
-            src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Prescription02&hairColor=Black&facialHairType=BeardLight&facialHairColor=Black&clotheType=Hoodie&clotheColor=Black&eyeType=Side&eyebrowType=Default&mouthType=Smile&skinColor=Light"
+          <img alt="AntonLovricAvatar" id="avatar" data-aos="fade-in"
+            src="./images/avatar.png"
           />
-          <h1>Hi, my name is Anton!</h1>
-          <h2 class="welcomeDescription">IT Student</h2>
+          <h1 data-aos-delay="100" data-aos="fade-in">Hi, my name is Anton!</h1>
+          <h2 data-aos-delay="200" data-aos="fade-in" class="welcomeDescription">IT Student</h2>
         </div>
         <div class="arrowDownWrapper"><a href="#bio"><img id="arrowDown" src="images/pointingDown.png"></div></a>
       </section>
 
       <section id="bio">
         <div class="container">
-          <div class="imageArea">
+          <div class="imageArea" data-aos="fade-in">
             <img alt="Anton Lovrić profile image" class="profileImage" src = "images/profilna.png">
           </div>
           
           <div class="bioText">
-            <h2>About me</h2>
-            <p>As a resident of planet Earth since May 1st 1999., I was surrounded by computers from a very young age. After attending Technical School of Slavonski Brod, getting a degree in mechanical engineering and participating in various competitions regarding mechanics and mechanical structures, I decided to go back to my roots and enroll into Faculty of organisation and informatics to pursue my IT career. After trying out many different IT branches, I came across frontend development and saw it as a great opportunity to express myself. This is a showcase of my current skills which I'm sharpening on a daily basis. You can see some of my <a href="#projects">projects</a> down below. Most of them are made using VSCode on Ubuntu 20.04, even though I used to work in Sublime Text aswell. If you wish to get in touch, take a look at the <a href="#contacts">contacts</a> section of this page to get my contact information. <br><br>Hope you enjoy your stay! :)</p>
+            <h2 data-aos-delay="100" data-aos="fade-in" >About me</h2>
+            <p data-aos-delay="200" data-aos="fade-in">As a resident of planet Earth since May 1st 1999., I was surrounded by computers from a very young age. After attending Technical School of Slavonski Brod, getting a degree in mechanical engineering and participating in various competitions regarding mechanics and mechanical structures, I decided to go back to my roots and enroll into Faculty of organisation and informatics to pursue my IT career. After trying out many different IT branches, I came across frontend development and saw it as a great opportunity to express myself. This is a showcase of my current skills which I'm sharpening on a daily basis. You can see some of my <a href="#projects">projects</a> down below. Most of them are made using VSCode on Ubuntu 20.04, even though I used to work in Sublime Text aswell. If you wish to get in touch, take a look at the <a href="#contacts">contacts</a> section of this page to get my contact information. <br><br>Hope you enjoy your stay! :)</p>
           </div>
         </div>
       </section>
       <section id="projects" class="projects">
-        <h2 class="projectSectionTitle">Projects</h2>
-        <p class="projectIntro">Here you can scroll through some of the projects I have made along my front-end development journey. If you want to know more about a particular project, feel free to click on it and get access to its github repository and a live demo of the website!</p>
-        <h3 class="projectTitle">Alojzije Janković Website</h3>
-      <div class="swiper">
+        <h2 data-aos="fade-in" class="projectSectionTitle">Projects</h2>
+        <p data-aos-delay="100" data-aos="fade-in" class="projectIntro">Here you can scroll through some of the projects I have made along my front-end development journey. If you want to know more about a particular project, feel free to click on it and get access to its github repository and a live demo of the website!</p>
+        <h3 data-aos-delay="100" data-aos="fade-in" class="projectTitle">Alojzije Janković Website</h3>
+      <div data-aos-delay="100" data-aos="fade-in" class="swiper">
         
         <div class="projectGroup swiper-wrapper">
           
           <div class="project swiper-slide">
-            <h2 class="projectTitle">Alojzije Janković Website</h2>
+            <h2 data-aos="fade-in" class="projectTitle">Alojzije Janković Website</h2>
             <picture>
               <source media="(max-width: 472px)" srcset="images/alojzijeJankovicProjectMobile.png">
               <img
@@ -354,5 +352,10 @@
       crossorigin="anonymous"
       defer rel="noreferrer"
     ></script>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
