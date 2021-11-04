@@ -55,7 +55,7 @@
 }
 
 .projectDescription {
-  padding: 2em;
+  padding: 1.2em;
   text-align: justify;
 }
 
@@ -195,7 +195,7 @@
   .swiper,
   .project {
     width: 90%;
-    height: 500px;
+    height: 40rem;
   }
   .projectImage {
     object-fit: fill;
@@ -208,7 +208,7 @@
       font-size: 1.5rem;
     }
     p {
-      font-size: 0.7rem;
+      font-size: 0.9rem;
       line-height: 1.5;
     }
   }
@@ -222,6 +222,6 @@
   }
   .projectIntro {
     font-size: 1.2rem;
-    max-width: 20rem;
+    width: auto;
   }
 }
