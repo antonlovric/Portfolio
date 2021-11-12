@@ -25,10 +25,12 @@ function refreshButtons(buttons, show) {
   if (show) {
     buttons.forEach((button) => {
       button.disabled = false;
+      button.style.visibility = "visible";
     });
   } else {
     buttons.forEach((button) => {
       button.disabled = true;
+      button.style.visibility = "hidden";
     });
   }
 }
