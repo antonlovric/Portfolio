@@ -1,4 +1,4 @@
-@use './variables' as *;
+@use '../misc/variables' as *;
 body {
   font-family: 'Raleway', sans-serif;
 }
@@ -61,36 +61,4 @@ h1 {
   font-size: 2rem;
   font-style: italic;
   font-weight: 200;
-}
-
-@media only screen and (max-width: 767px) {
-  #welcome-section {
-    min-height: 100vh;
-  }
-  #avatar {
-    width: 250px;
-  }
-  h1 {
-    color: $mainWhite;
-    font-size: 3rem;
-  }
-  .navigationLink {
-    font-size: 1rem;
-  }
-}
-
-@media only screen and (max-width: 479px) {
-  #welcome-section {
-    min-height: 100vh;
-  }
-  #avatar {
-    width: 250px;
-  }
-  h1 {
-    color: $mainWhite;
-    font-size: 3rem;
-  }
-  .navigationLink {
-    font-size: 1rem;
-  }
 }

@@ -1,8 +1,6 @@
-@use "./resets";
-@use "./menus";
-@use "./landingScreen";
-@use "./bioSection";
-@use "./projectArea";
-@use "./contactArea";
-@use "./footerArea";
-@use "./general";
+@use './misc/index.scss' as *;
+@use './heading/index.scss' as *;
+@use './heroSection/index.scss' as *;
+@use './bioSection/index.scss' as *;
+@use './projectSection/index.scss' as *;
+@use './contactSection/index.scss' as *;

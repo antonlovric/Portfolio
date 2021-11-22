@@ -1,0 +1,39 @@
+@media only screen and (max-width: 479px) {
+  .swiper,
+  .project {
+    width: 90%;
+    height: 30rem;
+  }
+  .projectImage {
+    object-fit: fill;
+    position: absolute;
+    top: 0;
+  }
+
+  .projectOverlay {
+    overflow: scroll;
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+  }
+  .projectButtons > button {
+    padding: 1.2em;
+    font-size: 0.7rem;
+    letter-spacing: 0.07rem;
+  }
+  .projectSectionTitle {
+    font-size: 1.8rem;
+  }
+
+  .projectTitle {
+    font-size: 2rem;
+  }
+  .projectIntro {
+    font-size: 1.2rem;
+    width: auto;
+  }
+}

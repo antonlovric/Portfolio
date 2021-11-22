@@ -1,4 +1,4 @@
-@use "./variables" as *;
+@use '../misc/variables' as *;
 footer {
   background: $mainGray;
   border-top: 5px solid $mainRed;

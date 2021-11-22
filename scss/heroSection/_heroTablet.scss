@@ -1,0 +1,16 @@
+@use '../misc/variables' as *;
+@media only screen and (max-width: 767px) {
+  #welcome-section {
+    min-height: 100vh;
+  }
+  #avatar {
+    width: 250px;
+  }
+  h1 {
+    color: $mainWhite;
+    font-size: 3rem;
+  }
+  .navigationLink {
+    font-size: 1rem;
+  }
+}
