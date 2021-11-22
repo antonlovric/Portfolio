@@ -32,8 +32,8 @@
   </head>
 
   <body>
-    <header>
-      <nav class="navbar">
+    <header >
+      <nav data-aos="fade-in" class="navbar">
         <a href="#welcome-section" class="navigationLink">Home</a>
         <a href="#bio" class="navigationLink">About</a>
         <a href="#projects" class="navigationLink">Work</a>
@@ -43,13 +43,13 @@
     <main>
       <section id="welcome-section">
         <div id="welcomeText">
-          <img alt="AntonLovricAvatar" id="avatar" data-aos="fade-in"
+          <img data-aos-delay="100" data-aos="fade-in" alt="AntonLovricAvatar" id="avatar" data-aos="fade-in"
             src="./images/avatar.png"
           />
-          <h1 data-aos-delay="100" data-aos="fade-in">Hi, my name is Anton!</h1>
-          <h2 data-aos-delay="200" data-aos="fade-in" class="welcomeDescription">IT Student</h2>
+          <h1 data-aos-delay="200" data-aos="fade-in">Hi, my name is Anton!</h1>
+          <h2 data-aos-delay="300" data-aos="fade-in" class="welcomeDescription">IT Student</h2>
         </div>
-        <div class="arrowDownWrapper"><a href="#bio"><img id="arrowDown" src="images/pointingDown.png"></div></a>
+        <div  class="arrowDownWrapper"><a href="#bio"><img id="arrowDown" src="images/pointingDown.png"></div></a>
       </section>
 
       <section id="bio">
@@ -76,9 +76,9 @@
           <div class="project swiper-slide">
             <h2 data-aos="fade-in" class="projectTitle">Alojzije Janković Website</h2>
             <picture>
-              <source media="(max-width: 472px)" srcset="images/alojzijeJankovicProjectMobile.png">
+              <source media="(max-width: 472px)" srcset="images/mobile/alojzijeJankovicProjectMobile.png">
               <img
-              src="images/alojzijeJankovicProject.jpg"
+              src="images/desktop/alojzijeJankovicProject.jpg"
               alt="Alojzije Janković Website"
               class="projectImage currentProjectImage"
             />
@@ -118,9 +118,9 @@
           <div class="project swiper-slide">
             <h2 class="projectTitle">BMI Calculator</h2>
             <picture>
-              <source media="(max-width: 472px)" srcset="images/bmiProjectMobile.png">
+              <source media="(max-width: 472px)" srcset="images/mobile/bmiProjectMobile.png">
               <img
-              src="images/bmiProject.png"
+              src="images/desktop/bmiProject.png"
               alt="BMI Project"
               class="projectImage currentProjectImage"
             />
@@ -160,9 +160,9 @@
           <div class="project swiper-slide">
             <h2 class="projectTitle">Portfolio Website</h2>
             <picture>
-              <source media="(max-width: 472px)" srcset="images/portfolioProjectMobile.png">
+              <source media="(max-width: 472px)" srcset="images/mobile/portfolioProjectMobile.png">
               <img
-              src="images/portfolioProject.png"
+              src="images/desktop/portfolioProject.png"
               alt="Portfolio"
               class="projectImage nextProjectImage"
             />
@@ -203,9 +203,9 @@
           <div class="project swiper-slide">
             <h2 class="projectTitle">Sunnyside Agency Landing Page</h2>
             <picture>
-              <source media="(max-width: 472px)" srcset="images/sunnysideAgencyMobile.png">
+              <source media="(max-width: 472px)" srcset="images/mobile/sunnysideAgencyMobile.png">
               <img
-              src="images/sunnysideAgencyDesktop.png"
+              src="images/desktop/sunnysideAgencyDesktop.png"
               alt="Sunnyside Agency Landing Page"
               class="projectImage currentProjectImage"
             />
@@ -241,9 +241,9 @@
             <h2 class="projectTitle">freeCodeCamp Course Certificate</h2>
             <div class="underline"></div>
             <picture>
-              <source media="(max-width: 472px)" srcset="images/freeCodeCampProjectMobile.webp">
+              <source media="(max-width: 472px)" srcset="images/mobile/freeCodeCampProjectMobile.webp">
               <img
-              src="images/freeCodeCampProject.png"
+              src="images/desktop/freeCodeCampProject.png"
               alt="freeCodeCamp Project"
               class="projectImage nextProjectImage"
             />
@@ -283,11 +283,15 @@
           <div class="project swiper-slide">
             <h2 class="projectTitle">MOOC Course Certificate</h2>
             <div class="underline"></div>
-            <img
-              src="images/mooc.webp"
+            <picture>              
+              <source media="(max-width: 472px)" srcset="images/mobile/alojzijeJankovicProjectMobile.png">
+              <img
+              src="images/desktop/mooc.webp"
               alt="MOOC Project"
               class="projectImage nextProjectImage"
             />
+            </picture>
+            
             <div class="projectOverlay">
               <div class="overlayTitleContainer">
               <h2>MOOC Course Certificate</h2>
