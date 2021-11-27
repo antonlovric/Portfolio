@@ -3,3 +3,9 @@
     min-height: 20em;
   }
 }
+
+@media only screen and (max-width: 479px) {
+  #contactTitle {
+    font-size: 3rem;
+  }
+}

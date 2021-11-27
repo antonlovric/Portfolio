@@ -1,0 +1,19 @@
+@media only screen and (max-width: 479px) {
+  .profileImage {
+    width: 250px;
+  }
+  .bioText {
+    width: 15rem;
+    font-size: 0.9rem;
+    h2 {
+      font-size: 2.5rem;
+      text-align: center;
+      font-weight: 700;
+    }
+  }
+  .container {
+    padding: 2em;
+    gap: 1.2em;
+    flex-direction: column;
+  }
+}
