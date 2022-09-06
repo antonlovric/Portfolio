@@ -1,40 +1,45 @@
 @media only screen and (max-width: 479px) {
-  .swiper,
-  .project {
-    width: 90%;
-    height: 30rem;
-  }
-  .projectImage {
-    object-fit: fill;
-    position: absolute;
-    top: 0;
-  }
-
-  .projectOverlay {
-    overflow: scroll;
-    h2 {
-      font-size: 2rem;
+    .swiper,
+    .project {
+        width: 90%;
+        height: 30rem;
     }
-    p {
-      font-size: 1rem;
-      line-height: 1.5;
+    .projectImage {
+        object-fit: fill;
+        position: absolute;
+        top: 0;
     }
-  }
-  .projectButtons > button {
-    padding: 1.2em;
-    font-size: 0.7rem;
-    letter-spacing: 0.07rem;
-  }
-  .projectSectionTitle {
-    font-size: 2.5rem;
-  }
 
-  .projectTitle {
-    font-size: 3rem;
-    letter-spacing: normal;
-  }
-  .projectIntro {
-    font-size: 1.2rem;
-    width: auto;
-  }
+    .projectOverlay {
+        overflow: scroll;
+        h2 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+    }
+
+    .projectButtons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .projectButtons > button {
+        padding: 1.2em;
+        font-size: 0.7rem;
+        letter-spacing: 0.07rem;
+    }
+    .projectSectionTitle {
+        font-size: 2.5rem;
+    }
+
+    .projectTitle {
+        font-size: 3rem;
+        letter-spacing: normal;
+    }
+    .projectIntro {
+        font-size: 1.2rem;
+        width: auto;
+    }
 }
